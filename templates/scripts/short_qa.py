@@ -22,8 +22,9 @@ R = []
 pr = json.loads(run("ffprobe", "-v", "error", "-show_entries", "stream=codec_type,codec_name,width,height,r_frame_rate,nb_frames,sample_rate,channels:format=duration", "-of", "json", vid).stdout)
 v = next(s for s in pr["streams"] if s["codec_type"] == "video")
 au = [s for s in pr["streams"] if s["codec_type"] == "audio"]
-R.append(f"SPECS {v['width']}x{v['height']} {v['r_frame_rate']} fps, {v.get('nb_frames')} frames, {float(pr['format']['duration']):.3f} s; audio: "
-         + ", ".join(f"{s['codec_name']} {s['sample_rate']} Hz {s['channels']}ch" for s in au) if au else "NONE")
+au_desc = ", ".join(f"{s['codec_name']} {s['sample_rate']} Hz {s['channels']}ch" for s in au) or "NONE"
+R.append(f"SPECS {v['width']}x{v['height']} {v['r_frame_rate']} fps, {v.get('nb_frames')} frames, "
+         f"{float(pr['format']['duration']):.3f} s; audio: {au_desc}")
 if au:
     e = run("ffmpeg", "-i", vid, "-map", "0:a:0", "-af", "ebur128=peak=true", "-f", "null", "-").stderr
     tail = e[e.rfind("Summary:"):]
