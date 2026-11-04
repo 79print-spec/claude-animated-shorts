@@ -26,7 +26,8 @@ Proven on **The Bridge That Fell for a Song**, a 67 s short about the 1831 Broug
 Claude then follows `SKILL.md`: topic and facts, then script, then voice, then the shot plan in `story.ts`, then stills, then renders. Agents check your frames against the reports and the frames, and you get the final 2K render and sound mix.
 
 ## Notes
-- Set `REMOTION_TMP` to a folder on a big drive. Every Remotion bundle copies `public/` (~1.3 GB) into the temp folder.
+- Set `REMOTION_TMP` to a folder on a big drive. Every Remotion bundle copies `public/` (~1.3 GB) into the temp folder. `bridge-stills.mjs` deletes its bundle when it finishes.
+- Old leftovers from earlier runs: `node templates/scripts/clean-remotion-temp.mjs` lists them and their size (dry run). Add `--yes` to delete them, when no render is running.
 - Story, characters and voice should always be your own. Use the references for the look, not the content.
 
 ## License
