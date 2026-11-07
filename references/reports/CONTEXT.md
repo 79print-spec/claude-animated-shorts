@@ -2,7 +2,7 @@
 
 ## Goal
 Our original 67 s vertical short "The Bridge That Fell for a Song" (1831 Broughton bridge, 74 marching soldiers) is
-rendered in three.js and currently looks flat, pastel and cheap next to the reference channel (the reference channel, studied
+rendered in three.js and currently looks flat, pastel and cheap next to the reference channel (studied
 privately). The user wants our picture to be as close as possible in QUALITY and STYLE: colourful, high contrast,
 "targeted" colours, black ink outlines on the 3D world, painted textures, real shading/lighting on characters and
 world, deep blurred backgrounds, lively movement, better character shapes (heads not perfect circles, better body
