@@ -157,7 +157,7 @@ Side and 3/4 views:
 
 1. **Proportions.** Our adults have kid proportions: 2.7 HH, with legs at 61% and torso at 75% of the reference lengths.
 2. **Limbs.** Arms and legs are 5× too thick, hands are 2× too big and skin-coloured, and the boots are big ovals. This is the "cheap sticker" look the user is reacting to.
-3. **Heads.** They are perfect symmetric ellipses 25% too tall: no chin taper, no crown/jaw difference, no tilt or side bulge, features dead-centre.
+3. **Heads.** They are perfectly symmetric ellipses 25% too tall: no chin taper, no crown/jaw difference, no tilt or side bulge, features dead-centre.
 4. **Outline.** Uniform width, and crushed to pure black on screen. The reference is plum with about 3:1 thick/thin, weighted to the bottom and shadow side.
 5. **Faces.** Eyes are 45% too far apart. Every face has blush and catchlights (the reference has neither). The default eye is a cute dot instead of a lidded deadpan eye. Brows are thin and mouths wide.
 6. **Values.** Faces render at luma 0.62–0.81 against the reference 0.93. There is no crescent shading on heads and no gradient on torsos.
